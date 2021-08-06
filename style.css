@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    background: linear-gradient(#686a6C, #F1A23D);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+section {
+    display: grid;
+    height: 480px;
+    width: 320px;
+    /* repetir as colunas */
+    grid-template-columns: repeat(4, 1fr);
+    /* repetir as linhas */
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.item {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: 0.5px solid black;
+}
+
+
+/* adiciona transparência quando o cursor passar no item */
+
+.item:hover {
+    opacity: 0.7;
+}
+
+
+/* adiciona transparência ao clicar no botão*/
+
+.item:active {
+    background-color: white;
+    opacity: 0.3;
+    color: #4a494f;
+}
+
+.button-operations-right {
+    background-color: #F1A23D;
+}
+
+.button-numbers {
+    background-color: #75757d;
+}
+
+.button-operations {
+    background-color: #5a5663;
+}
+
+.display {
+    background-color: #4a494f;
+    opacity: 0.7;
+    border: none;
+    /* altera a borda do lado esquerdo */
+    border-top-left-radius: 4px;
+    /* altera a borda do lado direito */
+    border-top-right-radius: 4px;
+    /* organiza quantas linhas tem no grid */
+    grid-column: 1 / 5;
+}
+
+.zero {
+    grid-column: 1 / 3
+}

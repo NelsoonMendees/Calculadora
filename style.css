@@ -70,6 +70,9 @@ section {
     border-top-right-radius: 4px;
     /* organiza quantas linhas tem no grid */
     grid-column: 1 / 5;
+    font-size: 30px;
+    color: white;
+    padding-left: 15px;
 }
 
 .zero {
